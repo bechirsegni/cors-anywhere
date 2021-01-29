@@ -7,6 +7,10 @@ frontend:
         - export PORT=8080
         - export "CORSANYWHERE_WHITELIST=https://books.recomend.io,https://www.goodreads.com/
     # IMPORTANT - Please verify your build commands
+    build:
+      commands:
+        - npm build
+
     postBuild:
       commands:
         -  node server.js
