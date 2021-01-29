@@ -7,9 +7,9 @@ frontend:
     # IMPORTANT - Please verify your build commands
     build:
       commands: [
-      export PORT=8080
-      export CORSANYWHERE_WHITELIST=https://books.recomend.io,https://www.goodreads.com/
-      node server.js
+        - export PORT=8080,
+        - export "CORSANYWHERE_WHITELIST=https://books.recomend.io,https://www.goodreads.com/",
+        - node server.js
       ]
   artifacts:
     # IMPORTANT - Please verify your build output directory
