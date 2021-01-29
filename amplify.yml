@@ -5,7 +5,7 @@ frontend:
       commands:
         - npm install
         - export PORT=8080
-        - export "CORSANYWHERE_WHITELIST=https://books.recomend.io,https://www.goodreads.com/
+        - export CORSANYWHERE_WHITELIST=https://books.recomend.io,https://www.goodreads.com/
     # IMPORTANT - Please verify your build commands
     build:
       commands:
