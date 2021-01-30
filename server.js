@@ -39,7 +39,7 @@ cors_proxy.createServer({
      'x-forwarded-proto',
      'x-forwarded-port',
   ],
-  setHeaders:[
+  setResponseHeaders:[
           {"x-gr-application":"iOS App" },
           {"Authorization":"OAuth"},
           {"realm": ""},
