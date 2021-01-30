@@ -40,6 +40,7 @@ cors_proxy.createServer({
      'x-forwarded-port',
   ],
   setResponseHeaders:[
+          {"Host":"www.goodreads.com"}
           {"x-gr-application":"iOS App" },
           {"Authorization":"OAuth"},
           {"realm": ""},
@@ -51,6 +52,7 @@ cors_proxy.createServer({
           {"oauth_nonce":"1815D290-FA94-4B83-9721-F43AB32DAC59"},
           {"oauth_version":"1.0"},
           {"Accept":"*/*"},
+          {"User-Agent":"Goodreads/3.29 (iPhone; iOS 14.4; Scale/3.00)"}
           {"X_APPLE_DEVICE_MODEL":"iPhone"},
           {"x-gr-os-version":"iOS 14.4"},
           {"Accept-Language":"en-ES;q=1, ru-ES;q=0.9"},
